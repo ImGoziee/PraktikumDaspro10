@@ -8,18 +8,15 @@ public class Triangle10 {
         int n = sc.nextInt();
         int i = 0;
 
-        while (i <= n) {
-            int j = 0;
-            while (j < i) {
+        while (i <= n) { 
+            int j = 0; 
+            while (j < i) { 
                 System.out.print("*");
-                j++;
-            }
+                j++; 
+            } 
             System.out.println();
             i++;
         }
-
-        System.out.println();
-
         i = n;
         while(1 <= i){
             int j = 0;
