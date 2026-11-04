@@ -22,10 +22,21 @@ public class ArrayRataNilai10 {
         int tertinggi = nilaiMhs[0];
         int terendah = nilaiMhs[0];
         for (int i = 0; i < nilaiMhs.length; i++) {
-            if(nilaiMhs[i] > tertinggi) tertinggi = nilaiMhs[i];
-            if(nilaiMhs[i] < terendah) terendah = nilaiMhs[i];
+            if (nilaiMhs[i] > tertinggi) {
+                tertinggi = nilaiMhs[i];
+            }
+            if (nilaiMhs[i] < terendah) {
+                terendah = nilaiMhs[i];
+            }
         }
-        System.out.println("Nilai tertinggi: "+tertinggi);
-        System.out.println("Nilai terendah: "+terendah);
+        System.out.println("Nilai tertinggi: " + tertinggi);
+        System.out.println("Nilai terendah: " + terendah);
+
+        String predikat
+                = (rata2 >= 85)
+                        ? "SANGAT BAIK"
+                        : (rata2 >= 70) ? "BAIK"
+                                : "PERLU PENDAMPINGAN";
+        System.out.println("Predikat kelas: " + predikat);
     }
 }
