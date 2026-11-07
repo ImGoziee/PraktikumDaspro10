@@ -1,4 +1,5 @@
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class PemesananKafeKampus10 {
@@ -47,17 +48,15 @@ public class PemesananKafeKampus10 {
             } else if (fitur == 2) {
                 System.out.print("Input jumlah pesanan: ");
                 pesanan = new String[sc.nextInt()];
+                sc.nextLine();
 
                 for (int i = 0; i < pesanan.length; i++) {
-                    System.out.println("Pesanan ke-"+(i+1)+": ");
-
-                    // String key = sc.nextLine();
-                    // if(key.equalsIgnoreCase(menu[i])){
-                    //     pesanan[i] = sc.nextLine();
-                    // }
-
+                    System.out.print("Pesanan ke-"+(i+1)+": ");
+                    pesanan[i] = sc.nextLine();
                 }
-
+                for (int i = 0;i<pesanan.length;i++){
+                    System.out.println(pesanan[i]);
+                }
             } else if (fitur != 3) {
                 System.out.println("Pilihan tidak valid!");
             }
