@@ -1,4 +1,3 @@
-
 import java.util.Scanner;
 
 public class ArrayNilai10 {
@@ -12,9 +11,21 @@ public class ArrayNilai10 {
             System.out.print("Masukkan nilai mahasiswa ke-" + (i + 1) + ": ");
             nilaiAkhir[i] = input.nextInt();
         }
-        for (int i = 0; i < nilaiAkhir.length; i++) {
-            String status = (nilaiAkhir[i] > 70) ? "lulus" : "tidak lulus";
-            System.out.println("Mahasiswa ke-" + (i + 1) + ": " + nilaiAkhir[i] + " (" + status + ")");
+
+        int numb = 1, jmlLulus = 0, jmlTidakLulus = 0;
+        for (int nilai : nilaiAkhir) {
+            String status = (nilai > 70) ? "lulus" : "tidak lulus";
+            System.out.println("Mahasiswa ke-" + numb + ": " + nilai + " (" + status + ")");
+            numb++;
+
+            if (nilai > 70) {
+                jmlLulus++;
+            } else {
+                jmlTidakLulus++;
+            }
         }
+        System.out.println("Jumlah mahasiswa lulus: " + jmlLulus);
+        System.out.println("Jumlah mahasiswa tidak lulus: " + jmlTidakLulus);
+        input.close();
     }
 }
