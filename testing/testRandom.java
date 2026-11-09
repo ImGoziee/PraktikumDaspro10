@@ -20,6 +20,5 @@ public class testRandom {
 
         System.out.println(toko);
 
-        // System.out.println(total);
     }
 }
