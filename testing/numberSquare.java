@@ -8,8 +8,8 @@ public class numberSquare {
         System.out.print("Masukkan nilai n: ");
         int n = sc.nextInt();
 
-        int digitN = String.valueOf(n).length();
-        String space = " ".repeat(digitN + 1);
+        int digit = String.valueOf(n).length();
+        String space = " ".repeat(digit + 1);
 
         if(n < 3) {
            System.out.print("Jumlah n minimal 3");
