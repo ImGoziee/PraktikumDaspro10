@@ -1,3 +1,4 @@
+
 import java.util.Scanner;
 
 public class numberSquare {
@@ -9,11 +10,16 @@ public class numberSquare {
         int n = sc.nextInt();
 
         int digit = String.valueOf(n).length();
+        // String space = "";
         String space = " ".repeat(digit + 1);
 
-        if(n < 3) {
-           System.out.print("Jumlah n minimal 3");
-           return;
+        // for (int i = 1; i <= digit + 1; i++) {
+        //     space = space + " ";
+        // }
+
+        if (n < 3) {
+            System.out.print("Jumlah n minimal 3");
+            return;
         }
 
         for (int y = 1; y <= n; y++) {
