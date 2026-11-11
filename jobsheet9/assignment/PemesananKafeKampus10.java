@@ -1,3 +1,4 @@
+
 import java.util.Scanner;
 
 public class PemesananKafeKampus10 {
@@ -79,7 +80,7 @@ public class PemesananKafeKampus10 {
                 }
                 System.out.println("\nTotal: Rp " + total + " --------------\n\n");
                 break;
-            } else {
+            } else if (fitur != 3) {
                 System.out.println("\nPilihan tidak valid!");
             }
         } while (fitur != 3);
