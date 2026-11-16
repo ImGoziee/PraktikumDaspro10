@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class array2D {
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
         int[][] nilai = new int[3][3];
 
@@ -20,11 +20,11 @@ public class array2D {
         };
 
         for (int i = 0; i < 3; i++) {
-            System.out.println("\nInput nilai " + mahasiswa[i]);
+            System.out.println("\nsc nilai " + mahasiswa[i]);
 
             for (int j = 0; j < 3; j++) {
                 System.out.print(mataKuliah[j] + ": ");
-                nilai[i][j] = input.nextInt();
+                nilai[i][j] = sc.nextInt();
             }
         }
 
@@ -40,6 +40,6 @@ public class array2D {
             }
         }
 
-        input.close();
+        sc.close();
     }
 }
